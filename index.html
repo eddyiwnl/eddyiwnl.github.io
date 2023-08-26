@@ -54,6 +54,52 @@
               </td>
             </tr>
           </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="hdr_before_after_stop()" onmouseover="hdr_before_after_start()"  bgcolor="#ffffd0">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='hdr_image'><img src='images/hdr_nerf--_after.png' width="160"></div>
+                    <img src='images/hdr_nerf--_before.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function hdr_before_after_start() {
+                      document.getElementById('hdr_image').style.opacity = "1";
+                    }
+        
+                    function hdr_before_after_stop() {
+                      document.getElementById('hdr_image').style.opacity = "0";
+                    }
+                    hdr_before_after_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <span class="papertitle">HDR-NeRF--: Learning High Dynamic Range View Synthesis With Unknown
+                        Exposure Settings</span>
+                  <!-- <a href="http://jonbarron.info/zipnerf">
+                    <span class="papertitle">Zip-NeRF: Anti-Aliased Grid-Based Neural Radiance Fields</span>
+                  </a> -->
+                  <br>
+                  <p>Nam Nguyen</p>,
+                  <strong>Edward Du</strong>,
+                  <br>
+                  <em>CVPR XRNeRF</em>, 2023
+                  <br>
+                  <!-- <a href="http://jonbarron.info/zipnerf">project page</a>
+                  /
+                  <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a>
+                  /
+                  <a href="https://arxiv.org/abs/2304.06706">arXiv</a>
+                  <p></p> -->
+                  <p>
+                  We enforce monotonacity on the tone mapping function and optimize exposure parameters separately for each color band to improve HDR (high dynamic range)
+                  view synthesis for datasets with unknown exposure settings.
+                  </p>
+                </td>
+              </tr>
+          </tbody>
+          </table>
+
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
                 <td style="padding:0px">
