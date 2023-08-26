@@ -56,7 +56,7 @@
           </tbody></table>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr onmouseout="hdr_before_after_stop()" onmouseover="hdr_before_after_start()"  bgcolor="#ffffd0">
+            <tr onmouseout="hdr_before_after_stop()" onmouseover="hdr_before_after_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='hdr_image'><img src='images/hdr_nerf--_after.png' width="160"></div>
@@ -79,7 +79,7 @@
                   <!-- <a href="http://jonbarron.info/zipnerf">
                     <span class="papertitle">Zip-NeRF: Anti-Aliased Grid-Based Neural Radiance Fields</span>
                   </a> -->
-                  <!-- <br> -->
+                  <br>
                   <strong>Edward Du</strong>,
                   <p>Nam Nguyen</p>,
                   <a href="https://jonathanventura.github.io/">Jonathan Ventura</a>
@@ -96,6 +96,51 @@
                   <p>
                   We enforce monotonacity on the tone mapping function and optimize exposure parameters separately for each color band to improve HDR (high dynamic range)
                   view synthesis for datasets with unknown exposure settings.
+                  </p>
+                </td>
+              </tr>
+
+              <tr onmouseout="ecology_before_after_stop()" onmouseover="ecology_before_after_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='ecology_image'><img src='images/ecology_after.PNG' width="160"></div>
+                    <img src='images/ecology_before.PNG' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function ecology_before_after_start() {
+                      document.getElementById('ecology_image').style.opacity = "1";
+                    }
+        
+                    function ecology_before_after_stop() {
+                      document.getElementById('ecology_image').style.opacity = "0";
+                    }
+                    ecology_before_after_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <span class="papertitle">Machine Learning for Florida Estuary
+                      Biodiversity Analysis: A Cal Poly Data Science
+                      Capstone</span>
+                  <!-- <a href="http://jonbarron.info/zipnerf">
+                    <span class="papertitle">Zip-NeRF: Anti-Aliased Grid-Based Neural Radiance Fields</span>
+                  </a> -->
+                  <br>
+                  <strong>Edward Du</strong>,
+                  <p>Ellyce Bilhorn</p>,
+                  <p>Charlie Ward</p>,
+                  <p>William Medwid</p>
+                  <br>
+                  <em>Data Science Capstone</em>, 2023
+                  <br>
+                  <a href="data/EdwardDu-Ecology.pdf">pdf</a>
+                  <!-- <a href="http://jonbarron.info/zipnerf">project page</a>
+                  /
+                  <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a>
+                  /
+                  <a href="https://arxiv.org/abs/2304.06706">arXiv</a>
+                  <p></p> -->
+                  <p>
+                  We developed an object detection model and desktop application that classifies and counts the specimen in Florida Estuary benthic soil samples. 
                   </p>
                 </td>
               </tr>
