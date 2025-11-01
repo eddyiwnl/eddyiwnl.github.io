@@ -64,6 +64,46 @@
           </tbody></table>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="deeppanorf_before_after_stop()" onmouseover="deeppanorf_before_after_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='deeppanorf_image'><img src='images/deeppanorf_before.png' width="160"></div>
+                  <img src='images/deeppanorf_after.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function deeppanorf_before_after_start() {
+                    document.getElementById('deeppanorf_image').style.opacity = "1";
+                  }
+                  function deeppanorf_before_after_stop() {
+                    document.getElementById('deeppanorf_image').style.opacity = "0";
+                  }
+                  deeppanorf_before_after_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                  <span class="papertitle">DeepPanoRF: Deep Prior for Neural 3D Reconstruction From Sparse Panoramas</span>
+                <br>
+                <strong>Edward Du</strong>,
+                Nam Nguyen,
+                <a href="https://jonathanventura.github.io/">Jonathan Ventura</a>
+                <br>
+                <em>My Culminating Master's Thesis</em>, 2025
+                <br>
+                <a href="https://digitalcommons.calpoly.edu/theses/2995/">Cal Poly Digital Commons Page</a>
+                <p>
+                Advances in neural field representations have led to a significant improvement in view synthesis quality. However, many current novel view synthesis 
+                methods rely on a dense set of input views, which can be impractical and inefficient in real-world applications. 
+                We propose DeepPanoRF, a novel method for 360◦ scene reconstruction from a sparse set of input equirectangular panoramas. 
+                Built upon K-Planes, a radiance field representation that encodes explicit features on orthogonal feature planes, 
+                our method does not directly learn feature grids. Instead, we parameterize the feature grids to enable sparse view 
+                reconstruction without pretraining or additional regularization. We implement a custom U-Net architecture to take 
+                advantage of the encoder-decoder network and the skip connections. We evaluate our method’s effectiveness on the 
+                Habitat-Matterport 3D (HM3D) dataset, which consists of diverse, high-quality indoor environments. Our results demonstrate 
+                that DeepPanoRF outperforms K-Planes in both reconstruction quality and structural coherence when dealing with sparse input views.
+                </p>
+              </td>
+            </tr>
+
             <tr onmouseout="instant_hdr_before_after_stop()" onmouseover="instant_hdr_before_after_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
@@ -121,7 +161,7 @@
                 Shivam Asija,
                 <strong>Edward Du</strong>,
                 Nam Nguyen,
-                <a href="https://szollmann.github.io/">Stefanie Zollman</a>
+                <a href="https://szollmann.github.io/">Stefanie Zollman</a>,
                 <a href="https://jonathanventura.github.io/">Jonathan Ventura</a>
                 <br>
                 <em>Adjunct Proceedings IEEE VR 2024</em>, 2024
